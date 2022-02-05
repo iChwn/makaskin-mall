@@ -6,7 +6,9 @@ const dashboardStyle = StyleSheet.create({
     flex: 1,
     height: "100%",
     backgroundColor: "#FFFFFF",
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
+    elevation: 1,
+    marginBottom: 1
   },
   wrapperNavico: {
     display: "flex", 
@@ -43,6 +45,7 @@ const dashboardStyle = StyleSheet.create({
     color: "#000000",
     fontSize: 24,
     fontFamily: "Roboto-Medium",
+    // marginBottom: 15
   },
   descTitle: {
     marginVertical: 10,

@@ -3,7 +3,7 @@ import * as React from 'react';
 import { SafeAreaView, StyleSheet, Text, TextInput, View } from "react-native";
 
 const InputText = (props) => {
-  const {label, placeholder, keyboardType, customWrapperStyle, leftImage} = props
+  const {label, placeholder, keyboardType, customWrapperStyle, leftImage } = props
 
   return (
     <SafeAreaView style={{...styles.inputContainer, ...customWrapperStyle}}>
@@ -11,6 +11,7 @@ const InputText = (props) => {
       <View style={{...styles.inputWrapper}}>
         {leftImage !== "" && (leftImage)}
         <TextInput
+          {...props}
           style={styles.inputText}
           placeholder={placeholder}
           keyboardType={keyboardType}
@@ -59,7 +60,9 @@ const styles = StyleSheet.create({
   inputText: {
     fontFamily: "Roboto-Regular",
     fontSize: 16,
-    flex: 1
+    flex: 1,
+    color: "#000000",
+    textAlignVertical: 'top'
   }
 });
 

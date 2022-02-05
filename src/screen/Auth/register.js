@@ -33,7 +33,7 @@ const RegisterScreen = (props) => {
         <Text style={loginStyles.bottomLabel}>
           Sudah memiliki akun?
         </Text>
-        <NormalButton onPress={_ => props.navigation.navigate('ConnectionError')} label="Login" labelStyle={loginStyles.registerText}/>
+        <NormalButton onPress={_ => props.navigation.navigate('Login')} label="Login" labelStyle={loginStyles.registerText}/>
       </View>
     </View>
   )

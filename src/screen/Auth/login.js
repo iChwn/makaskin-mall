@@ -27,7 +27,7 @@ const LoginScreen = (props) => {
       <Text style={loginStyles.title}>Login Maksakin Mall</Text>
       {inputList.map((result, key) => (
         <TextInput key={key} {...result}/>
-      ))}      
+      ))}
       <BasicButton onPress={_ => props.navigation.navigate("ConnectionError")} label="Masuk" customStyle={loginStyles.customButton}/>
       <View style={loginStyles.flexRow}>
         <Text style={loginStyles.bottomLabel}>
